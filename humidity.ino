@@ -16,15 +16,7 @@ void setup(){
   pinMode(led, OUTPUT);
   digitalWrite(in1, HIGH);
   digitalWrite(led, LOW);
-  
-  while(millis()<13000){
 
-    digitalWrite(led,HIGH);
-    delay(50);
-    digitalWrite(led,LOW);
-    delay(50);
- 
-  }
 
   digitalWrite(led,LOW);
   pinMode(11, OUTPUT);                                       // Output pin 11 for dehumidifier relay
@@ -34,42 +26,31 @@ void setup(){
  
 void loop(){
    
-  digitalWrite(in1,HIGH);
-  digitalWrite(led,LOW);
-  
-  if(digitalRead(sensor)==HIGH){
-
-   t=millis();
-   
-   while(millis()<(t+5000)){
-
-    digitalWrite(in1,LOW);
-    digitalWrite(led,HIGH);
-     
-     if((millis()>(t+2300))&&(digitalRead(sensor)==HIGH)){
-
-       t=millis();
-      
-      }
-   }
-  
-  }
+ 
     DHT.read11(dht_apin);
     
     Serial.print("Current humidity = ");
     Serial.print(DHT.humidity);
-    Serial.print("%  ");                                     // Monitor humidity values inside the dehumidifier in real time
-
-    if (DHT.humidity < 35){
+    Serial.println("%  ");                                     // Monitor humidity values inside the dehumidifier in real time
+    Serial.print("Current temperature = ");
+    Serial.print(DHT.temperature);
+    Serial.println(" C  ");
+    if (digitalRead(8) == 1){
+        digitalWrite(in1,LOW);
+    }
+    else if (digitalRead(8) == 0){
+        digitalWrite(in1,HIGH);
+    }
+    if (DHT.humidity < 15){
       digitalWrite(11,LOW);                                    // Low means off. if the humidity is below 35, the relay will turn off.
-      delay(2000);
+      delay(200);
     }
 
-    else if (DHT.humidity > 50){
+    else if (DHT.humidity > 25){
       digitalWrite(11,HIGH);                                   // High means on. if the humidity is above 50, the relay will turn on.
-      delay(2000);
+      delay(200);
     }
-    
-    delay(5000);                                             // Wait 5 seconds before reading from sensor again. Change the value to change how often the data is read from the sensor.
+Serial.println(digitalRead(8));
+    delay(500);                                             // Wait 5 seconds before reading from sensor again. Change the value to change how often the data is read from the sensor.
   
 }
