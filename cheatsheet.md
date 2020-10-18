@@ -1,17 +1,17 @@
 ### Table of contents ###
 - [Intro(week1)](#Intro(week1))
 	- [Intro](#Intro)
-	- [Software Processs](#Software Process)
-	- [Software Phases](#Software Phases)
-	- [SLDC Models](#SLDC Models)
-		- [Waterfall Model](#Waterfall Model)
-		- [Spiral Model](#Spiral Model)
-		- [Evolutionary Prototyping](#Evolutionary Prototyping)
-		- [Rational Unified Process](#Rational Unified Process)
-		- [Agile Process](#Agile Process)
-	- [Choosing a model](#Choosing a model)
+	- [Software Processs](#software-process)
+	- [Software Phases](#software-phase)
+	- [SLDC Models](#sldc-models)
+		- [Waterfall Model](#waterfall-model)
+		- [Spiral Model](#spiral-model)
+		- [Evolutionary Prototyping](#evolutionary-prototyping)
+		- [Rational Unified Process](#rational-unified-process)
+		- [Agile Process](#agile-process)
+	- [Choosing a model](#choosing-a-model)
 - [Week2](#Week2)
-	- [Requirements Engineering](#Requirements Engineering)
+	- [Requirements Engineering](#requirements-engineering)
 - [Week3](#Week3)
 - [Week4](#Week4)
 - [Week5](#Week5)
@@ -143,5 +143,3 @@ Processes are characterised by phases.
 >> - Validate
 >> - Manage  
 >> - Iterate  
-
-
