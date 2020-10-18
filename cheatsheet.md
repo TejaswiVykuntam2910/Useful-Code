@@ -14,6 +14,11 @@
 	- [Requirements Engineering](#requirements-engineering)
 	- [Purpose](#purpose)
 	- [Quality](#quality)
+	- [Communication](#communication)
+	- [Stakeholders](#stakeholders)
+	- [Software Intensive System](#software-intensive-system)
+	- [Constraints, Capabilities, and Opportunities](#constraints-capabilities-and-opportunities)
+	- [Tasks](#tasks)
 - [Week3](#Week3)
 - [Week4](#Week4)
 - [Week5](#Week5)
@@ -171,3 +176,18 @@ Processes are characterised by phases.
 >>> - User stories, use cases.  
 
 > Making the requirements document id part of RE.
+#### Stakeholders ####
+> - Everyone who is involved with the software are stakeholders.  
+> - Identifying stakeholders and their needs is part of RE.
+#### Software Intensive System ####
+> A software Intensive System consists of software + hardware + context.
+>> - Ex. ATM service. 
+>> - User interacts with ATM machine using software which runs on hardware and the context is banking system.  
+
+> Often, hardware and context are ignored. This leads to poor quality software.  
+> Identifying context(when and how the software is used) is part of RE.
+#### Constraints, Capabilities, and Opportunities ####
+> Different stakeholders have different requirements.  
+> Irrelevant needs identified create inconsistencies.  
+> Identify constraints to know what is possible and what expertise is needed to execute the requirements.
+#### Tasks ####
