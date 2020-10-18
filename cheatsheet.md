@@ -19,6 +19,11 @@
 	- [Software Intensive System](#software-intensive-system)
 	- [Constraints, Capabilities, and Opportunities](#constraints-capabilities-and-opportunities)
 	- [Tasks](#tasks)
+	- [Requirements](#requirements)
+	- [Requirement types](#requirement-types)
+	- [Properties of a requirement](#properties-of-a-requirement)
+	- [Traceability](#traceability)
+	- [Requirement Specification Document](#requirement-specification-document)
 - [Week3](#Week3)
 - [Week4](#Week4)
 - [Week5](#Week5)
@@ -191,3 +196,54 @@ Processes are characterised by phases.
 > Irrelevant needs identified create inconsistencies.  
 > Identify constraints to know what is possible and what expertise is needed to execute the requirements.
 #### Tasks ####
+> Establishing the services that the customer requires from the system and the constraints under which it operates and is developed.  
+> - Identifying stakeholders and their needs.  
+> - Identifying Purpose.  
+> - Identifying constraints and their capabilities.  
+> - Identifying context.  
+> - Develop a software specification.
+#### Requirements ####
+> Requirements are a part of the system.  
+> System analyst and customer together generate it.  
+> Should focus on 'what'  
+>> - What is the system supposed to do?  
+>> - May include what it's not supposed to do.  
+>> - Should include error handling and/or recovery methods.  
+
+> Specification comes from both Application domain(Domain properties and requirements) and Machine domain(Computer and program).  
+> Specification captures properties that are observed in both domains.  
+#### Requirement types ####
+> Two types: Functional and Non-Functional.  
+> Functional:  
+>> - What a system is supposed to do with respect to a set of computations.  
+>> - Ex. Press a button to turn on the light.  
+
+> Non-Functional:
+>> - Quality, security, interoperability, cost, performance etc.  
+
+> Another distinction: User and system
+>> - User requirements: Written for end users in a non techical language.  
+>> - System requirements:  Written for developers in a technical language. Developers are expected to find a system based on the aforementioned requirements.  
+
+> Both user and system requirements must be defined.
+#### Properties of a requirement ####
+> - Should be simple.
+> - Should be testable.
+> - Should be organised.
+>> - Related requirements are grouped.
+>> - Priorities indicated(Mandatory, Nice to have, superfluous).  
+
+> - Should be traceable.
+#### Traceability ####
+> Traceability is the link between requirements, their sources and the system design.
+> Source traceability:  
+>> - Requirement -> Stakeholder who proposed it.  
+
+> Requirement traceability:
+>> - Requirement -> Dependent requirements.  
+
+> Design traceability:  
+>> - Requirement -> Design
+#### Requirement Specification Document ####
+> Can be used as the contract or to bid for a contract.  
+> It should be complete and pertinent.
