@@ -1,5 +1,5 @@
 ### Table of contents ###
-- [Intro(week1)](#Intro(week1))
+- [Intro(week1)](#Intro)
 	- [Intro](#Intro)
 	- [Software Processs](#software-process)
 	- [Software Phases](#software-phase)
