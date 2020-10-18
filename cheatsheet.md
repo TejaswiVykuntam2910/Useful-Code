@@ -12,6 +12,8 @@
 	- [Choosing a model](#choosing-a-model)
 - [Week2](#Week2)
 	- [Requirements Engineering](#requirements-engineering)
+	- [Purpose](#purpose)
+	- [Quality](#quality)
 - [Week3](#Week3)
 - [Week4](#Week4)
 - [Week5](#Week5)
@@ -142,4 +144,30 @@ Processes are characterised by phases.
 >> - Specify
 >> - Validate
 >> - Manage  
->> - Iterate  
+>> - Iterate
+#### Purpose ####
+> Software is designed for a purpose.  
+> If it's faulty, then either:
+>> - Designer didn't understand the purpose and requirements
+>> - The software is used in a way it's not intended to be used
+>> - Development team is bad.  
+
+> Purpose is often complex.
+>> - Many kind of users and activities.
+>> - Conflicing user interests.  
+
+> Identifying the purpose is part of Requirement Engineering.  
+> Poor understanding of the purpose results in faulty software.
+#### Quality ####
+> Quality is determining software's fitness for the purpose.
+#### Communication ####
+> Developer needs to communicate with the user to discover their needs.  
+> Communicate system description to stakeholders.  
+>> - Users, Customers, Developers, Constituencies.
+>> - Formal:  
+>>> - Shall statements, document templates, state transition diagrams, detailed mathematical specifications.
+
+>> - Informal:
+>>> - User stories, use cases.  
+
+> Making the requirements document id part of RE.
