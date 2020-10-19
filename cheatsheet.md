@@ -36,6 +36,7 @@
 	- [Object Modeling Technique](#object-modeling-technique)
 	- [Unified Modeling Language](#unified-modeling-language)
 	- [OO Analysis](#oo-analysis)
+	- [UML Structural diagrams](#uml-structural-diagrams)
 - [Week3](#Week3)
 - [Week4](#Week4)
 - [Week5](#Week5)
@@ -424,3 +425,5 @@ Processes are characterised by phases.
 >> - Identify nouns, which become classes  
 >> - Identify adjectives, which become attributes
 >> - Identify active verbs, which become operations
+#### UML Structural diagrams ####
+> Refer to week3 slides. Too much graphic data to include in this document.
