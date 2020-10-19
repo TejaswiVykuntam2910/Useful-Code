@@ -24,6 +24,18 @@
 	- [Properties of a requirement](#properties-of-a-requirement)
 	- [Traceability](#traceability)
 	- [Requirement Specification Document](#requirement-specification-document)
+	- [Elicit](#elicit)
+	- [Analysis](#analysis)
+	- [Change Management](#change-management)
+	- [RE in practice](#re-in-practice)
+	- [Requirements Modeling](#requirements-modeling)
+	- [Scenarios](#scenarios)
+	- [Use cases](#use-cases)
+	- [Object oriented modeling](#object-oriented-modeling)
+	- [Classes](#classes)
+	- [Object Modeling Technique](#object-modeling-technique)
+	- [Unified Modeling Language](#unified-modeling-language)
+	- [OO Analysis](#oo-analysis)
 - [Week3](#Week3)
 - [Week4](#Week4)
 - [Week5](#Week5)
@@ -247,3 +259,167 @@ Processes are characterised by phases.
 #### Requirement Specification Document ####
 > Can be used as the contract or to bid for a contract.  
 > It should be complete and pertinent.
+#### Elicit ####
+> Gathering requirements from various sources:
+>> - Stakeholders
+>> - Documents(Manuals, papers etc.)
+>> - App domain  
+
+> Not a straightforward task because domain knowledge is:
+>> - distributed
+>> - rarely available in written form
+>> - has conflicts with other sources
+>> - is noisy(possible changes between observations)
+>> - is prone to bias(People may try to influence developers and omit information)  
+
+> Disconnect perception and practice
+>> - Customer's perception of a simple 3 step task might involve N steps in practice  
+
+### Elicit - Techniques ###
+> Background reading
+>> - Used when one is not familiar with the org. and used before interviewing
+>> - Sources: e.g. company annual reports, job descriptions
+>> - Cons: time consuming, may contain out of date irrelevant data  
+
+> Interviewing
+>> - Pros: can uncover a rich set of information through follow-up probing
+>> - Cons: reequires specialized skills to interview people  
+
+> Collecting facts and figures through hard data and samples
+>> - Which data to collect? What id a sample?
+>> - Sources: Financial reports  
+
+> Surveys
+>> - Pros: Quickly collect data from large populations, remote administration possible
+>> - Cons: Might miss opportunities to collect relevant data  
+
+> Meetings:
+>> - Summarization of findings  
+
+> Collaborative, social and cognitive techniques
+>> Ex. brainstorming, collecting info about participants by observing them in their environment, finding problem solving methods of participants  
+
+> Summary:
+>> - Surveys
+>> - Meetings
+>> - Hard data and samples
+>> - Interviewing
+>> - Background reading
+#### Analysis ####
+> Verification and Validation
+>> - Verification: Developers check for SRS conformation(correctness, performance, completeness, pertinence etc.)
+>> - Validation: Check if customers' needs are met  
+
+> Outcomes
+>> - Feasibility study: checks for time, budget, meeting org. objectives, system integration requirements etc.
+>> - Risks identified and addressed
+>> - Prioritized list of requirements (mandatory, nice to have, superfluous)
+### RE process ###
+> Iterate over the 4 activities of RE and perform change management.
+>> - elicit->negotiate->analyze->validate->repeat
+#### Change management ####
+> Accommodating changing requirements  
+> Main stages:
+>> - Problem analysis: Discuss what is the problem with a requirement and propose changes
+>> - Change analysis and costing: Assess effects of change on other requirements
+>> - Change implementation: Modify requirements document(and other paperwork) to reflect changes
+#### RE in practice ####
+> Note that when you iterate/refine:
+>> - System design may start emerging.
+>> - Discover how system inter-operates with other systems
+>>> - This generates design requirements
+>>> - System component interaction exposes design alternatives, procedures, data formats etc.
+
+
+> In practice, we always end up using a bit of design on RE and vice versa.
+#### Requirements Modeling ####
+> Purpose: structured organization of requirements gathered for analysis and refinement  
+> Several ways depending upon focus and objectives / depends on what and how to model.
+>> - Organizational / Enterprise modeling e.g. goal modeling
+>> - Behavioral / Information modeling e.g. sequence, class, structural diagrams
+>> - Modeling quality aspects e.g. task models
+>> They are all complementary. Can have a mix of one or more.
+>> - Goal Modeling is extremely popular
+>>> - a natural way - start with goals and continuously refine them
+
+
+>> - Natural language for modeling
+>> - Unified Modeling Language
+#### Scenarios ####
+> Effective requirement elicitation technique  
+> Captures real-world use cases of the system  
+> Desirable features:  
+>> - Description of initial condition
+>> - Description of normal flow of events
+>> - Description of failure scenarios (what can go wrong)
+>> - Information about other activities happening simultaneously
+>> - Description of end state
+#### Use cases ####
+> UML’s scenario-based technique  
+>> - actors and interactions  
+
+> Should describe all possible interactions with the system  
+> Sequence diagrams may be used to add details to use-cases
+#### Object oriented modeling ####
+> So far, we looked at requirements from a functionality / feature perspective  
+> Object orientation is a shift from this perspective that emphasizes data over functions.
+### Object orientation ###
+> What does it mean to think in terms of object orientation?
+>> - Give precedence to data over functions (think: objects, attributes, methods)  
+>> - Hide information under well-defined and stable interfaces (think: encapsulation)
+>> - Enable incremental refinement and (re)use (think: inheritance and polymorphism)
+
+> Object orientation: Why?
+>> - Improve costs
+>> - Improve development process
+>> - Enforce good design  
+
+> Object oriented analysis and design:
+>> - Object orientation lead to OO analysis and design(OOAD)
+>>> - Model a software system as a group of interacting objects  
+
+>> - OOA is a requirements analysis technique that focuses on modeling real-world objects  
+>> - Developed in the 90’s.  
+>> - Influential contributors: Rumbaugh, Booch, Jacobson  
+
+### Objects and instances: ###
+> Object is a computational unit  
+>> - Has a state and operations that operate on the state.
+>> - The state consists of a collection of instance variables or attributes.
+>>> - An instance is a specific version of the object  
+
+>> - Send a “message” to an object to invoke/execute an operation (message-passing metaphor in traditional OO thinking)
+#### Classes ####
+> Template or blueprint for creating objects.(Defines the shape of objects)  
+> Has features = attributes + operations  
+> New objects created are instances of the class  
+> Operations:  prescription or service provided by the class to access the state of an object
+>> - Built-in or Primitive types of a language – int, char, float, string, bool etc. have implicitly defined operations(E.g. cannot execute a shift operator on a negative integer)  
+>> - Composite types (read: classes) have operations that are implicit as well as those that are explicitly defined.  
+
+> Why do we need classes:  
+>> - To define user-defined types / invent new types and extend the language  
+#### Object Modeling Technique ####
+> Considers 3 aspects while modeling:  
+>> - Data – modeled using extensions to entity-relationship (ER) diagrams
+>>> - Shows classes and inheritance relationships among classes  
+
+>> -  Functions – modeled using data flow diagrams
+>>> - A function becomes a method of a class  
+
+>> - Control – modeled using state machines
+>>> -  Represents dynamic aspects i.e. how the system evolved in response to inputs  
+
+> Rumbaugh developed it in 90s.
+#### Unified Modeling Language ####
+> - Extends OMT  
+> - Considers various aspects  
+> - Has more diagrams available for modeling  
+> - Jacobson and Booch were influential contributors
+#### OO Analysis ####
+> From real-world objects to requirements  
+> Broad guidelines:  
+>> - Prepare / obtain textual description of the problem
+>> - Identify nouns, which become classes  
+>> - Identify adjectives, which become attributes
+>> - Identify active verbs, which become operations
