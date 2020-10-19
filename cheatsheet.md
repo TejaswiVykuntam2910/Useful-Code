@@ -39,6 +39,13 @@
 	- [OO Analysis](#oo-analysis)
 	- [UML Structural diagrams](#uml-structural-diagrams)
 - [Week4](#week4)
+	- [Use case diagrams](#use-case-diagrams)
+	- [Actors](#actors)
+	- [Documenting use case - guidelines](#documenting-use-case-guidelines)
+	- [Use cases - role](#use-cases-role)
+	- [Use case diagram creation - guidelines](#use-case-diagram-creation-guidelines)
+	- [Sequence diagrams](#sequence-diagrams)
+	- [Sequence diagram creation - guidelines](#sequence-diagram-creation-guidelines)
 - [Week5](#week5)
 - [Week6](#week6)
 - [Week7](#week7)
@@ -428,3 +435,57 @@ Processes are characterised by phases.
 #### UML Structural diagrams ####
 > Refer to week3 slides. Too much graphic data to include in this document.
 ### Week4 ###
+#### Use case diagrams ####
+> Describes outside view of the system
+>> - Interaction of outside entities (Actors) with the system
+>> - System actions that result in observable actions of value to the actors
+#### Actors ####
+> Entity: human or device that interacts with the system  
+> Plays some role  
+>> - Can play more than one role  
+>>> - Ex. customer of a bank can also be an employee of the bank(customer and employee are roles)  
+
+>> - More than one entity can play the same role
+>>> - E.g. an employee and a regular customer can both play the role of a customer  
+
+>> - Can appear in more than one use case.
+#### Documenting use case - guidelines ####
+> Describe flow of events either formally or informally
+>> - How the use case starts and ends
+>> - Normal flow of events
+>> - Alternative flow of events
+>> - Exceptional flow of events  
+
+> Formal way
+>> - Sequence diagrams, pseudocodes  
+
+> Informal way
+>> - Textual description
+#### Use cases - role ####
+> Why?  
+>> - More effective requirements elicitation  
+>> - Starting point for analyzing architecture (next topic)
+>> - Identify priority of users (e.g. Registrar. If the registrar cannot perform his assigned role? How can a student use the system?)  
+>>> - Help in better planning  
+
+>> - Help in writing test cases even before the system is defined/coded  
+#### Use case diagram creation - guidelines ####
+> - Choose a name that conveys purpose
+> - Put a single scenario into a use case
+> - Define the flow of events clearly - helps understand how system works
+> - Omit irrelevant details
+> - Extract common flow of events among multiple user interactions to create new use cases i.e. refine e.g. Registrar, student, professors all log in to the system before performing their roles.
+#### Sequence diagrams ####
+> - Interaction diagram that describes how objects / components communicate and the ordered sequence of messages that are exchanged
+> - Can be used as a formal way to document a use case
+#### Sequence diagram creation - guidelines ####
+> - Draw objects that participate in the interaction at the top along X-axis
+>> - Place objects that initiate the interaction towards the left  
+
+> - Add object lifelines - lines that show the existence of an object over a period
+>> - Add dashed lines for all except the left-most object  
+
+> - Place messages from top to bottom
+>> - Annotate messages with numbers for added clarity  
+
+> - Add focus of control – thin rectangular boxes that indicate the period when the object is in action
