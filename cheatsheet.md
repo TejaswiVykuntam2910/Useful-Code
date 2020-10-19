@@ -259,6 +259,7 @@ Processes are characterised by phases.
 #### Requirement Specification Document ####
 > Can be used as the contract or to bid for a contract.  
 > It should be complete and pertinent.
+### Week3 ###
 #### Elicit ####
 > Gathering requirements from various sources:
 >> - Stakeholders
