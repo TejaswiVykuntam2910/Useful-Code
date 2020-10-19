@@ -1,5 +1,5 @@
 ### Table of contents ###
-- [Intro(week1)](#Intro)
+- [Intro week1](#intro-week1)
 	- [Intro](#Intro)
 	- [Software Processs](#software-process)
 	- [Software Phases](#software-phase)
@@ -10,7 +10,7 @@
 		- [Rational Unified Process](#rational-unified-process)
 		- [Agile Process](#agile-process)
 	- [Choosing a model](#choosing-a-model)
-- [Week2](#Week2)
+- [Week2](#week2)
 	- [Requirements Engineering](#requirements-engineering)
 	- [Purpose](#purpose)
 	- [Quality](#quality)
@@ -24,6 +24,7 @@
 	- [Properties of a requirement](#properties-of-a-requirement)
 	- [Traceability](#traceability)
 	- [Requirement Specification Document](#requirement-specification-document)
+- [Week3](#week3)
 	- [Elicit](#elicit)
 	- [Analysis](#analysis)
 	- [Change Management](#change-management)
@@ -37,13 +38,12 @@
 	- [Unified Modeling Language](#unified-modeling-language)
 	- [OO Analysis](#oo-analysis)
 	- [UML Structural diagrams](#uml-structural-diagrams)
-- [Week3](#Week3)
-- [Week4](#Week4)
-- [Week5](#Week5)
-- [Week6](#Week6)
-- [Week7](#Week7)
+- [Week4](#week4)
+- [Week5](#week5)
+- [Week6](#week6)
+- [Week7](#week7)
 
-### Intro(week1) ###
+### Intro week1 ###
 #### Intro ####
 > #### What is software?  
 >  
@@ -427,3 +427,4 @@ Processes are characterised by phases.
 >> - Identify active verbs, which become operations
 #### UML Structural diagrams ####
 > Refer to week3 slides. Too much graphic data to include in this document.
+### Week4 ###
